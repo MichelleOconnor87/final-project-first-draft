@@ -16,11 +16,18 @@
    });
 
    });
-
-  	
-  	 
-   
-
-
+ 
     //   Check what answer they picked
     //   And tell them if they're correct
+
+    // hamburger icon for mobile
+
+    $(function() {
+  // on hamburger click
+  $('#hamburger').on('click', function() {
+    // show nav
+    $('header nav').slideToggle();
+  });
+    
+});
+
