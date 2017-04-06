@@ -31,3 +31,50 @@
     
 });
 
+    //user visits site
+    //wait 10 seconds
+    //email subscription box pops up
+    //user enters email address
+    //or
+    //user presses cross button
+
+    //slidetoggle for read more on blog posts
+    $(document).ready(function() {
+  $('.readmore').on('click', function(event){
+    event.preventDefault();
+    $('#show-this-on-click').slideDown();
+    $('.readmore').hide();
+    $('.readless').show();
+  });
+  $('.readless').on('click', function(event){
+    event.preventDefault();
+    $('#show-this-on-click').slideUp();
+    $('.readless').hide();
+    $('.readmore').show();
+  });
+ // $('.learnmore').on('click', function(event){
+    //event.preventDefault();
+    //$('#learnmoretext').slideDown();
+    //$('.learnmore').hide();
+  //});
+});
+
+    $(document).ready(function() {
+  $('.readmoretwo').on('click', function(event){
+    event.preventDefault();
+    $('#show-this-on-clicktwo').slideDown();
+    $('.readmoretwo').hide();
+    $('.readlesstwo').show();
+  });
+  $('.readlesstwo').on('click', function(event){
+    event.preventDefault();
+    $('#show-this-on-clicktwo').slideUp();
+    $('.readlesstwo').hide();
+    $('.readmoretwo').show();
+  });
+  $('.learnmore').on('click', function(event){
+    event.preventDefault();
+    $('#learnmoretext').slideDown();
+    $('.learnmore').hide();
+  });
+});

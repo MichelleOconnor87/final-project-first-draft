@@ -18,7 +18,7 @@ body {
 }
 .title{
   text-align: center; 
-  font-size:30px;
+  font-size:40px;
   font-family: 'Libre Baskerville', serif;
   color:#585859;
   padding:30px;
@@ -27,7 +27,7 @@ body {
 }
 
 nav {
-  background: #e3e6ea;
+  background: white;
   padding: 20px;
   text-align: center;
 }
@@ -36,6 +36,7 @@ nav li{
   display: inline;
   padding-right:20px;
   color:#585859;
+  font-size: 20px;
 
 }
 
@@ -269,9 +270,13 @@ fieldset legend {font-weight:600;
 
 /*---blog page---*/
 
+body{
+  background-color: white;
+}
+
 .top h1{
   text-align: center;
-  font-size:100%;
+  font-size:40px;
   text-transform: uppercase;
   letter-spacing: 1%;
   margin-top:15%;
@@ -280,19 +285,21 @@ fieldset legend {font-weight:600;
 
 
 .main h1{
-  text-align: center;
-  font-size:70%;
+  font-size:30px;
   text-transform: uppercase;
   letter-spacing: 1%;
   margin:10% 0;
   line-height: 50px;
+  float:left;
 }
 
 .main{
-  text-align: center;
-  font-size:20px;
-  letter-spacing: 2%;
-  line-height: 40px;
+      position: relative;
+      max-width: 400px;
+      font-size:20px;
+      letter-spacing: 2%;
+      line-height: 40px;
+      margin-left: 20px;
 }
 
 .main li{
@@ -302,30 +309,102 @@ fieldset legend {font-weight:600;
 
 .main li h2{
   font-weight: 800;
-  font-size:80%;
+  font-size:30px;
   padding-bottom: 10%;
   line-height: 50px;
 }
 
 .main h3{
-  font-size:50%;
+  font-size:30px;
+  position:relative;
+  margin-left: 100px;
 }
 
 .main img{
   padding-bottom: 5%;
-  width:750px;
+  width:600px;
 }
 
 .yay img{
   width:200px;
+  margin-left: 100px;
 }
+
+.instagram{
+  position: absolute;
+    top: 2100px;
+    right: 90px;
+    width: 200px;
+    height: 100px;
+    width: 25%;
+  display: inline-block;
+
+}
+
+.instagram h3{
+  font-size: 20px;
+  font-weight: 800;
+  padding-bottom: 30px;
+}
+
+.instagram a{
+  text-decoration: none;
+  color: grey;
+}
+
+.instagram a:hover{
+  color:black;
+}
+
+ 
+
+
+/*---sidebar---*/
+#sidebar {
+  position: absolute;
+    top: 1600px;
+    right: 0;
+    width: 200px;
+    height: 100px;
+    width: 25%;
+  display: inline-block;
+}
+
+#sidebar h3{
+  font-size: 30px;
+  font-weight: 800;
+  padding-bottom: 20px;
+}
+
+#sidebar li a{
+  color: grey;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 50px;
+  text-decoration: none;
+  transition: transform 0.2s cubic-bezier(.4,.02,.88,1.32);
+}
+
+#sidebar li a:hover{
+  color: #454647;
+  transform: scale(1.2);
+
+
+}
+
 
 
 /*---start parallax---*/
 
 .parallax{
- background: url(../images/dad.jpg)repeat fixed 60%;
- height:400px;
+ background: url(../images/type.png)no-repeat center fixed;
+ background-size: 100% 50%;
+          -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+      
+
 }
 
 
@@ -363,7 +442,7 @@ nav li{
 }
 
 .top h1{
-  font-size:575%;
+  font-size:50px;
 }
 
 .parallax{
@@ -371,20 +450,42 @@ nav li{
 }
 
 .main h1{
-  font-size:275%;
+  font-size:150%;
+  width:700px;
+  text-align: center;
 
 }
 
 .main img{
-  width:1000px;
+  width:700px;
+  float:left;
 }
 
 .main li h2{
-  font-size:200%;
+  font-size:120%;
 }
 
 .main h3{
-  font-size:150%;
+  font-size:120%;
+}
+
+.main p, .main li{
+  width: 600px;
+}
+
+.hide {
+  display: none;
+  margin-top: 30px;
+}
+
+.hidetwo{
+  display: none;
+}
+
+
+.readless{
+position: relative;
+
 }
 
 .yay img{
@@ -412,21 +513,35 @@ footer ul li {
 /**blog page mobile style**/
 .parallax{
  height:300px;
+ max-width: 500px;
 }
 .main img{
   width:500px;
 }
 
+.main p{
+  font-size: 15px;
+  max-width: 380px;
+}
+
+.main h1{
+  float:left;
+  max-width: 400px;
+  font-size: 20px;
+}
+
 .main li h2{
-  font-size:120%;
+  font-size:90%;
+  max-width: 400px;
 }
 
 .main h3{
   font-size:90%;
+  max-width: 400px;
 }
 
 .main li{
-  padding: 40px;
+  padding: 30px;
 }
 
 .yay img{
@@ -444,6 +559,22 @@ footer ul li {
   list-style: none;
   margin: 0 26px 75px;
 }
+
+#sidebar{
+    position: absolute;
+    top: 6800px;
+    left: 0 ;
+    width: 200px;
+    height: 100px;
+}
+
+.instagram{
+  position: absolute;
+  top:7200px;
+  left: 10px;
+  width: 200px;
+  height: 100px;
+}
 /***blog page mobile style end***/
 
 /***index page mobile style***/
@@ -457,19 +588,33 @@ footer ul li {
 }
 
 .quote{
-  font-size: 20px;
-  margin: 0% 10% 5% 15%;
+  font-size: 17px;
+  padding-left: 5px;
+  padding-right:5px;
+  float:left;
 
 }
 
 .linktoblog{
   font-size: 20px;
-  margin: 0% 10% 5% 15%;
+  margin: auto;
 }
 
 .babies{
   margin:15% 25% 0;
 
+}
+
+.parallaxone{
+display:none;
+}
+
+.babyleft{
+  margin-top: 40px;
+}
+
+nav{
+  display: none;
 }
 
 /***index page mobile style end***/
