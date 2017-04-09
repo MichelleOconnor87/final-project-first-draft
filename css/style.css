@@ -21,8 +21,7 @@ body {
   font-size:40px;
   font-family: 'Libre Baskerville', serif;
   color:#585859;
-  padding:30px;
-  
+  padding:30px; 
   
 }
 
@@ -382,12 +381,10 @@ body{
   font-weight: 800;
   line-height: 50px;
   text-decoration: none;
-  transition: transform 0.2s cubic-bezier(.4,.02,.88,1.32);
 }
 
 #sidebar li a:hover{
   color: #454647;
-  transform: scale(1.2);
 
 
 }
@@ -483,6 +480,7 @@ nav li{
 }
 
 
+
 .readless{
 position: relative;
 
@@ -501,6 +499,11 @@ footer ul li {
   display: inline-block;
   list-style: none;
   margin: 0 26px 75px;
+}
+
+.mama{
+  margin:center;
+  text-decoration: none;
 }
 
 
@@ -575,6 +578,12 @@ footer ul li {
   width: 200px;
   height: 100px;
 }
+
+.readmore{
+  display:none;
+}
+
+
 /***blog page mobile style end***/
 
 /***index page mobile style***/
@@ -618,6 +627,7 @@ nav{
 }
 
 /***index page mobile style end***/
+
 
 
 
